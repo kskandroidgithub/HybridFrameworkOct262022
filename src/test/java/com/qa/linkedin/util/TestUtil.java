@@ -21,7 +21,7 @@ public class TestUtil extends TestBase {
 		String directory = "target/surefire-reports/failedTestScreenshots/";
 		// String
 		// directory=System.getProperty("user.dir")+"/target/surefire-reports/failedTestScreenshots/";
-		new File(directory).mkdirs();
+		new File(directory).mkdirs(); //annonmous object
 		String path = directory + fileName;
 		try {
 			File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);

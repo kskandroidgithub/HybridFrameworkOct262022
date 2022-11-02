@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-11-02T01:02:41 GMT" name="Default suite" finished-at="2022-11-02T01:02:53 GMT" duration-ms="11894">
+    <groups>
+    </groups>
+    <test started-at="2022-11-02T01:02:41 GMT" name="Default test" finished-at="2022-11-02T01:02:53 GMT" duration-ms="11894">
+      <class name="com.qa.linkedin.testcases.LinkedInHomePageTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.qa.linkedin.testcases.LinkedInHomePageTest@f667fe]" started-at="2022-11-02T01:02:41 GMT" name="setup" finished-at="2022-11-02T01:02:52 GMT" duration-ms="10722" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.qa.linkedin.testcases.LinkedInHomePageTest@f667fe]" started-at="2022-11-02T01:02:52 GMT" name="beforeClass" finished-at="2022-11-02T01:02:52 GMT" duration-ms="34" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method signature="verifyLinkedinHomePageTitleTest()[pri:0, instance:com.qa.linkedin.testcases.LinkedInHomePageTest@f667fe]" started-at="2022-11-02T01:02:52 GMT" name="verifyLinkedinHomePageTitleTest" finished-at="2022-11-02T01:02:52 GMT" duration-ms="48" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLinkedinHomePageTitleTest -->
+        <test-method signature="verifyLinkedinLogoTest()[pri:0, instance:com.qa.linkedin.testcases.LinkedInHomePageTest@f667fe]" started-at="2022-11-02T01:02:52 GMT" name="verifyLinkedinLogoTest" finished-at="2022-11-02T01:02:52 GMT" duration-ms="137" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLinkedinLogoTest -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.qa.linkedin.testcases.LinkedInHomePageTest@f667fe]" started-at="2022-11-02T01:02:52 GMT" name="afterClass" finished-at="2022-11-02T01:02:52 GMT" duration-ms="78" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.linkedin.testcases.LinkedInHomePageTest@f667fe]" started-at="2022-11-02T01:02:52 GMT" name="tearDown" finished-at="2022-11-02T01:02:53 GMT" duration-ms="728" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.qa.linkedin.testcases.LinkedInHomePageTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

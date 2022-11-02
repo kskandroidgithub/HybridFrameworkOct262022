@@ -9,6 +9,7 @@ import org.openqa.selenium.support.PageFactory;
 import com.qa.linkedin.util.BasePageWebActions;
 
 public class LinkedinHomePage extends BasePageWebActions{
+	LinkedInLoginPage loginPage;
 	
 	private Logger log=LogManager.getLogger(LinkedinHomePage.class);
 	//create a constructor
@@ -21,5 +22,41 @@ public class LinkedinHomePage extends BasePageWebActions{
 	
 	@FindBy(css="a[class^='nav__logo-link']")
 	private WebElement linkedinLogo;
+	@FindBy(css="a[class^='nav__button-secondary']")
+	private WebElement signinLink;
+	
+	/**
+	 * Fetching the Linked in Homepage title
+	 * 
+	 */
+	
+	public String getLinkedInHomePageTitle() {
+		log.info("Fetching the LinkedIn Homepage title..");
+		return driver.getTitle();
+		
+	}
+	/**
+	 * Checking LinkedIn logo element is present in Homepage or not
+	 * 
+	 */
+	public boolean isLinkedInlogoPresent() {
+		log.info("Checking LinkedIn logo element is present in homepage or not");
+		return linkedinLogo.isDisplayed();			
+	}
+	/**
+	 * Clicking on Signin Link
+	 */
+	public LinkedInLoginPage clickOnSigninLink() {
+		log.info("Clicking in Signin link");
+		try {
+			click(signInLink);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+		return new LinkedInLoginPage();
+	}
+	
+	
+	
 	
 }

@@ -45,7 +45,6 @@ public class BasePageWebActions extends TestBase{
 		wait.until(ExpectedConditions.elementToBeClickable(element));
 		log.debug("click on the given element");
 		element.click();
-
 	}
 
 	public void clickByActions(WebElement element) {
