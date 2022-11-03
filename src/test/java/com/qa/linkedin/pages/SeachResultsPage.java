@@ -2,6 +2,7 @@ package com.qa.linkedin.pages;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -30,7 +31,10 @@ public class SeachResultsPage extends BasePageWebActions{
 	 */
 	public void clickSeeAllPeopleResultsLink() throws InterruptedException {
 		log.info("Clicking on See All People Results Link");
-		click(searchPeoplesResultsLink);
+		if(isElementPresent(By.xpath("//div[contains(@class,'search-results')]/a[1]"))) {
+			click(searchPeoplesResultsLink);
+		}
+		
 	}
 	/**
 	 * Get Search results Page Tile
@@ -65,7 +69,7 @@ public class SeachResultsPage extends BasePageWebActions{
 		if(str.length==2) {
 			strCount=str[0];
 		}else if(str.length>2) {
-			strCount=str[1];
+			strCount=str[1].replace(",", "");
 		}
 		log.info("Convert string into long primitive value");
 		Long resCount=Long.parseLong(strCount);

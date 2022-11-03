@@ -17,7 +17,7 @@ public class LinkedInFeedPage extends BasePageWebActions{
 		PageFactory.initElements(driver, this);
 	}
 	
-	@FindBy(css="input[class*='search-global-typehead']")
+	@FindBy(xpath="//*[@id='global-nav-typeahead']/input")
 	private WebElement searchEditBox;
 	
 	@FindBy(css="div[class*='feed-identity']")

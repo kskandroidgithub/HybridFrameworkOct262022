@@ -9,7 +9,8 @@
     <classes>
       <class name="com.qa.linkedin.testcases.LinkedInHomePageTest"/>
       <class name="com.qa.linkedin.testcases.LinkedInLoginPageTest"/>
-      <class name="com.qa.linkedin.testcases.LinkedInFeedPageTest"/>      
+      <class name="com.qa.linkedin.testcases.LinkedInFeedPageTest"/>
+       <class name="com.qa.linkedin.testcases.LinkedInSearchResultsPageTest"/> 
     </classes>
   </test> <!-- LinkedinTest -->
 </suite> <!-- LinkedinSuite -->

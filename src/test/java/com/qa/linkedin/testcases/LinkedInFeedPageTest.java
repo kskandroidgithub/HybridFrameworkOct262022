@@ -46,7 +46,7 @@ public class LinkedInFeedPageTest extends TestBase{
 	  Assert.assertTrue(feedPage.isProfileRailCardIsPresent(), "Profile Rail Card is Not Found in Feed Page");
   }
   
-  @Test
+  @Test(dependsOnMethods= {"verifyProfileRailCardTest"})
   public void doLogoutTest() throws InterruptedException {
 	  log.info("Loggin out from Linkedin Application");
 	  feedPage.doSignOut();
