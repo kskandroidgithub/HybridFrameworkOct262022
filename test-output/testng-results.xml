@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="14" passed="11" failed="2" skipped="1">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-11-03T01:20:37 GMT" name="LinkedinSuite" finished-at="2022-11-03T01:22:13 GMT" duration-ms="95236">
+    <groups>
+    </groups>
+    <test started-at="2022-11-03T01:20:37 GMT" name="LinkedinTest" finished-at="2022-11-03T01:22:13 GMT" duration-ms="95236">
+      <class name="com.qa.linkedin.testcases.LinkedInHomePageTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.qa.linkedin.testcases.LinkedInHomePageTest@2f162cc0]" started-at="2022-11-03T01:20:37 GMT" name="setup" finished-at="2022-11-03T01:20:41 GMT" duration-ms="3439" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.qa.linkedin.testcases.LinkedInHomePageTest@2f162cc0]" started-at="2022-11-03T01:20:41 GMT" name="beforeClass" finished-at="2022-11-03T01:20:41 GMT" duration-ms="23" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method signature="verifyLinkedinHomePageTitleTest()[pri:0, instance:com.qa.linkedin.testcases.LinkedInHomePageTest@2f162cc0]" started-at="2022-11-03T01:20:41 GMT" name="verifyLinkedinHomePageTitleTest" finished-at="2022-11-03T01:20:41 GMT" duration-ms="24" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLinkedinHomePageTitleTest -->
+        <test-method signature="verifyLinkedinLogoTest()[pri:0, instance:com.qa.linkedin.testcases.LinkedInHomePageTest@2f162cc0]" started-at="2022-11-03T01:20:41 GMT" name="verifyLinkedinLogoTest" finished-at="2022-11-03T01:20:41 GMT" duration-ms="37" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLinkedinLogoTest -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.qa.linkedin.testcases.LinkedInHomePageTest@2f162cc0]" started-at="2022-11-03T01:20:41 GMT" name="afterClass" finished-at="2022-11-03T01:20:41 GMT" duration-ms="35" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.linkedin.testcases.LinkedInHomePageTest@2f162cc0]" started-at="2022-11-03T01:20:41 GMT" name="tearDown" finished-at="2022-11-03T01:20:42 GMT" duration-ms="611" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.qa.linkedin.testcases.LinkedInHomePageTest -->
+      <class name="com.qa.linkedin.testcases.LinkedInSearchResultsPageTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.qa.linkedin.testcases.LinkedInSearchResultsPageTest@314b8f2d]" started-at="2022-11-03T01:22:01 GMT" name="setup" finished-at="2022-11-03T01:22:04 GMT" duration-ms="2194" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.qa.linkedin.testcases.LinkedInSearchResultsPageTest@314b8f2d]" started-at="2022-11-03T01:22:04 GMT" name="beforeClass" finished-at="2022-11-03T01:22:04 GMT" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method signature="navigateToLoginPageTest()[pri:0, instance:com.qa.linkedin.testcases.LinkedInSearchResultsPageTest@314b8f2d]" started-at="2022-11-03T01:22:04 GMT" name="navigateToLoginPageTest" description="Navigating to login page.." finished-at="2022-11-03T01:22:04 GMT" duration-ms="831" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToLoginPageTest -->
+        <test-method signature="doLoginTest()[pri:0, instance:com.qa.linkedin.testcases.LinkedInSearchResultsPageTest@314b8f2d]" started-at="2022-11-03T01:22:04 GMT" name="doLoginTest" finished-at="2022-11-03T01:22:11 GMT" depends-on-methods="com.qa.linkedin.testcases.LinkedInSearchResultsPageTest.navigateToLoginPageTest" duration-ms="6968" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doLoginTest -->
+        <test-method signature="doPeoplesSearchTest(java.lang.String)[pri:0, instance:com.qa.linkedin.testcases.LinkedInSearchResultsPageTest@314b8f2d]" started-at="2022-11-03T01:22:12 GMT" name="doPeoplesSearchTest" data-provider="getData" finished-at="2022-11-03T01:22:12 GMT" depends-on-methods="com.qa.linkedin.testcases.LinkedInSearchResultsPageTest.doLoginTest" duration-ms="0" status="FAIL">
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[java.lang.NoSuchMethodError: org.apache.logging.log4j.Logger.atDebug()Lorg/apache/logging/log4j/LogBuilder;]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.RuntimeException: java.lang.NoSuchMethodError: org.apache.logging.log4j.Logger.atDebug()Lorg/apache/logging/log4j/LogBuilder;
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:57)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:157)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:791)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:728)
+at org.testng.internal.invokers.ParameterHandler.handleParameters(ParameterHandler.java:72)
+at org.testng.internal.invokers.ParameterHandler.createParameters(ParameterHandler.java:51)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:917)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.lang.NoSuchMethodError: org.apache.logging.log4j.Logger.atDebug()Lorg/apache/logging/log4j/LogBuilder;
+at org.apache.poi.openxml4j.opc.PackageRelationshipCollection.parseRelationshipsPart(PackageRelationshipCollection.java:300)
+at org.apache.poi.openxml4j.opc.PackageRelationshipCollection.<init>(PackageRelationshipCollection.java:159)
+at org.apache.poi.openxml4j.opc.PackageRelationshipCollection.<init>(PackageRelationshipCollection.java:129)
+at org.apache.poi.openxml4j.opc.PackagePart.loadRelationships(PackagePart.java:566)
+at org.apache.poi.openxml4j.opc.OPCPackage.getParts(OPCPackage.java:742)
+at org.apache.poi.openxml4j.opc.OPCPackage.open(OPCPackage.java:315)
+at org.apache.poi.ooxml.util.PackageHelper.open(PackageHelper.java:47)
+at org.apache.poi.xssf.usermodel.XSSFWorkbook.<init>(XSSFWorkbook.java:296)
+at com.qa.linkedin.util.ExcelUtils.getTestData(ExcelUtils.java:38)
+at com.qa.linkedin.testcases.LinkedInSearchResultsPageTest.getData(LinkedInSearchResultsPageTest.java:60)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:53)
+... 25 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.RuntimeException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doPeoplesSearchTest -->
+        <test-method signature="doLogoutTest()[pri:0, instance:com.qa.linkedin.testcases.LinkedInSearchResultsPageTest@314b8f2d]" started-at="2022-11-03T01:22:12 GMT" name="doLogoutTest" finished-at="2022-11-03T01:22:12 GMT" depends-on-methods="com.qa.linkedin.testcases.LinkedInSearchResultsPageTest.doPeoplesSearchTest" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method com.qa.linkedin.testcases.LinkedInSearchResultsPageTest.doLogoutTest() on instance com.qa.linkedin.testcases.LinkedInSearchResultsPageTest@314b8f2d depends on not successfully finished methods 
+[com.qa.linkedin.testcases.LinkedInSearchResultsPageTest.doPeoplesSearchTest() on instance com.qa.linkedin.testcases.LinkedInSearchResultsPageTest@314b8f2d]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method com.qa.linkedin.testcases.LinkedInSearchResultsPageTest.doLogoutTest() on instance com.qa.linkedin.testcases.LinkedInSearchResultsPageTest@314b8f2d depends on not successfully finished methods 
+[com.qa.linkedin.testcases.LinkedInSearchResultsPageTest.doPeoplesSearchTest() on instance com.qa.linkedin.testcases.LinkedInSearchResultsPageTest@314b8f2d]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:150)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doLogoutTest -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.qa.linkedin.testcases.LinkedInSearchResultsPageTest@314b8f2d]" started-at="2022-11-03T01:22:12 GMT" name="afterClass" finished-at="2022-11-03T01:22:12 GMT" duration-ms="75" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.linkedin.testcases.LinkedInSearchResultsPageTest@314b8f2d]" started-at="2022-11-03T01:22:12 GMT" name="tearDown" finished-at="2022-11-03T01:22:13 GMT" duration-ms="650" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.qa.linkedin.testcases.LinkedInSearchResultsPageTest -->
+      <class name="com.qa.linkedin.testcases.LinkedInLoginPageTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.qa.linkedin.testcases.LinkedInLoginPageTest@2f7a7219]" started-at="2022-11-03T01:20:42 GMT" name="setup" finished-at="2022-11-03T01:20:44 GMT" duration-ms="2816" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.qa.linkedin.testcases.LinkedInLoginPageTest@2f7a7219]" started-at="2022-11-03T01:20:44 GMT" name="beforeClass" finished-at="2022-11-03T01:20:44 GMT" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method signature="navigateToLoginPageTest()[pri:1, instance:com.qa.linkedin.testcases.LinkedInLoginPageTest@2f7a7219]" started-at="2022-11-03T01:20:44 GMT" name="navigateToLoginPageTest" finished-at="2022-11-03T01:20:45 GMT" duration-ms="1080" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToLoginPageTest -->
+        <test-method signature="verifyLinkedinLoginPageTitleTest()[pri:2, instance:com.qa.linkedin.testcases.LinkedInLoginPageTest@2f7a7219]" started-at="2022-11-03T01:20:45 GMT" name="verifyLinkedinLoginPageTitleTest" finished-at="2022-11-03T01:20:46 GMT" duration-ms="31" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLinkedinLoginPageTitleTest -->
+        <test-method signature="verifyLinkedinSigninHeaderTextTest()[pri:3, instance:com.qa.linkedin.testcases.LinkedInLoginPageTest@2f7a7219]" started-at="2022-11-03T01:20:46 GMT" name="verifyLinkedinSigninHeaderTextTest" finished-at="2022-11-03T01:20:46 GMT" duration-ms="33" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLinkedinSigninHeaderTextTest -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.qa.linkedin.testcases.LinkedInLoginPageTest@2f7a7219]" started-at="2022-11-03T01:20:46 GMT" name="afterClass" finished-at="2022-11-03T01:20:46 GMT" duration-ms="54" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.linkedin.testcases.LinkedInLoginPageTest@2f7a7219]" started-at="2022-11-03T01:20:46 GMT" name="tearDown" finished-at="2022-11-03T01:20:46 GMT" duration-ms="631" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.qa.linkedin.testcases.LinkedInLoginPageTest -->
+      <class name="com.qa.linkedin.testcases.LinkedInFeedPageTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.qa.linkedin.testcases.LinkedInFeedPageTest@361c294e]" started-at="2022-11-03T01:20:46 GMT" name="setup" finished-at="2022-11-03T01:20:49 GMT" duration-ms="2448" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.qa.linkedin.testcases.LinkedInFeedPageTest@361c294e]" started-at="2022-11-03T01:20:49 GMT" name="beforeClass" finished-at="2022-11-03T01:20:49 GMT" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method signature="doLogoutTest()[pri:0, instance:com.qa.linkedin.testcases.LinkedInFeedPageTest@361c294e]" started-at="2022-11-03T01:20:49 GMT" name="doLogoutTest" finished-at="2022-11-03T01:21:51 GMT" duration-ms="62223" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.cssSelector: img[class*='global-nav__me-photo ghost-person ember-view']' (tried for 45 second(s) with 500 milliseconds interval)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.cssSelector: img[class*='global-nav__me-photo ghost-person ember-view']' (tried for 45 second(s) with 500 milliseconds interval)
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+at com.qa.linkedin.pages.LinkedInFeedPage.doSignOut(LinkedInFeedPage.java:48)
+at com.qa.linkedin.testcases.LinkedInFeedPageTest.doLogoutTest(LinkedInFeedPageTest.java:52)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"img[class*='global-nav__me-photo ghost-person ember-view']"}
+  (Session info: chrome=107.0.5304.88)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.5.2', revision: '702c64f787c'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.13'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [06c96d38adccc233e3df287c7a7da10e, findElement {using=css selector, value=img[class*='global-nav__me-photo ghost-person ember-view']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.88, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\kskd7\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55715}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55715/devtoo..., se:cdpVersion: 107.0.5304.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 06c96d38adccc233e3df287c7a7da10e
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+at com.sun.proxy.$Proxy21.isDisplayed(Unknown Source)
+at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:307)
+at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:40)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:293)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
+... 30 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doLogoutTest -->
+        <test-method signature="navigateToLoginPageTest()[pri:0, instance:com.qa.linkedin.testcases.LinkedInFeedPageTest@361c294e]" started-at="2022-11-03T01:21:51 GMT" name="navigateToLoginPageTest" description="Navigating to login page.." finished-at="2022-11-03T01:21:53 GMT" duration-ms="1423" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToLoginPageTest -->
+        <test-method signature="doLoginTest()[pri:0, instance:com.qa.linkedin.testcases.LinkedInFeedPageTest@361c294e]" started-at="2022-11-03T01:21:53 GMT" name="doLoginTest" finished-at="2022-11-03T01:22:01 GMT" depends-on-methods="com.qa.linkedin.testcases.LinkedInFeedPageTest.navigateToLoginPageTest" duration-ms="8067" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doLoginTest -->
+        <test-method signature="verifyFeedPageTitleTest()[pri:0, instance:com.qa.linkedin.testcases.LinkedInFeedPageTest@361c294e]" started-at="2022-11-03T01:22:01 GMT" name="verifyFeedPageTitleTest" finished-at="2022-11-03T01:22:01 GMT" depends-on-methods="com.qa.linkedin.testcases.LinkedInFeedPageTest.doLoginTest" duration-ms="8" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyFeedPageTitleTest -->
+        <test-method signature="verifyProfileRailCardTest()[pri:0, instance:com.qa.linkedin.testcases.LinkedInFeedPageTest@361c294e]" started-at="2022-11-03T01:22:01 GMT" name="verifyProfileRailCardTest" finished-at="2022-11-03T01:22:01 GMT" depends-on-methods="com.qa.linkedin.testcases.LinkedInFeedPageTest.verifyFeedPageTitleTest" duration-ms="27" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyProfileRailCardTest -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.qa.linkedin.testcases.LinkedInFeedPageTest@361c294e]" started-at="2022-11-03T01:22:01 GMT" name="afterClass" finished-at="2022-11-03T01:22:01 GMT" duration-ms="92" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.linkedin.testcases.LinkedInFeedPageTest@361c294e]" started-at="2022-11-03T01:22:01 GMT" name="tearDown" finished-at="2022-11-03T01:22:01 GMT" duration-ms="653" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.qa.linkedin.testcases.LinkedInFeedPageTest -->
+    </test> <!-- LinkedinTest -->
+  </suite> <!-- LinkedinSuite -->
+</testng-results>

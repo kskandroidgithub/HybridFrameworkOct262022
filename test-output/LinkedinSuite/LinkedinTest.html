@@ -1,0 +1,356 @@
+<html>
+<head>
+<title>TestNG:  LinkedinTest</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>LinkedinTest</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>11/2/1</td>
+</tr><tr>
+<td>Started on:</td><td>Thu Nov 03 01:20:37 GMT 2022</td>
+</tr>
+<tr><td>Total time:</td><td>95 seconds (95236 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.qa.linkedin.testcases.LinkedInSearchResultsPageTest.doPeoplesSearchTest()'><b>doPeoplesSearchTest</b><br>Test class: com.qa.linkedin.testcases.LinkedInSearchResultsPageTest</td>
+<td><div><pre>java.lang.RuntimeException: java.lang.NoSuchMethodError: org.apache.logging.log4j.Logger.atDebug()Lorg/apache/logging/log4j/LogBuilder;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+Caused by: java.lang.NoSuchMethodError: org.apache.logging.log4j.Logger.atDebug()Lorg/apache/logging/log4j/LogBuilder;
+	at org.apache.poi.openxml4j.opc.PackageRelationshipCollection.parseRelationshipsPart(PackageRelationshipCollection.java:300)
+	at org.apache.poi.openxml4j.opc.PackageRelationshipCollection.&lt;init&gt;(PackageRelationshipCollection.java:159)
+	at org.apache.poi.openxml4j.opc.PackageRelationshipCollection.&lt;init&gt;(PackageRelationshipCollection.java:129)
+	at org.apache.poi.openxml4j.opc.PackagePart.loadRelationships(PackagePart.java:566)
+	at org.apache.poi.openxml4j.opc.OPCPackage.getParts(OPCPackage.java:742)
+	at org.apache.poi.openxml4j.opc.OPCPackage.open(OPCPackage.java:315)
+	at org.apache.poi.ooxml.util.PackageHelper.open(PackageHelper.java:47)
+	at org.apache.poi.xssf.usermodel.XSSFWorkbook.&lt;init&gt;(XSSFWorkbook.java:296)
+	at com.qa.linkedin.util.ExcelUtils.getTestData(ExcelUtils.java:38)
+	at com.qa.linkedin.testcases.LinkedInSearchResultsPageTest.getData(LinkedInSearchResultsPageTest.java:60)
+	... 25 more
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1048928512", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1048928512'><pre>java.lang.RuntimeException: java.lang.NoSuchMethodError: org.apache.logging.log4j.Logger.atDebug()Lorg/apache/logging/log4j/LogBuilder;
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:57)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:157)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:791)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:728)
+	at org.testng.internal.invokers.ParameterHandler.handleParameters(ParameterHandler.java:72)
+	at org.testng.internal.invokers.ParameterHandler.createParameters(ParameterHandler.java:51)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:917)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:806)
+	at org.testng.TestRunner.run(TestRunner.java:601)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.lang.NoSuchMethodError: org.apache.logging.log4j.Logger.atDebug()Lorg/apache/logging/log4j/LogBuilder;
+	at org.apache.poi.openxml4j.opc.PackageRelationshipCollection.parseRelationshipsPart(PackageRelationshipCollection.java:300)
+	at org.apache.poi.openxml4j.opc.PackageRelationshipCollection.&lt;init&gt;(PackageRelationshipCollection.java:159)
+	at org.apache.poi.openxml4j.opc.PackageRelationshipCollection.&lt;init&gt;(PackageRelationshipCollection.java:129)
+	at org.apache.poi.openxml4j.opc.PackagePart.loadRelationships(PackagePart.java:566)
+	at org.apache.poi.openxml4j.opc.OPCPackage.getParts(OPCPackage.java:742)
+	at org.apache.poi.openxml4j.opc.OPCPackage.open(OPCPackage.java:315)
+	at org.apache.poi.ooxml.util.PackageHelper.open(PackageHelper.java:47)
+	at org.apache.poi.xssf.usermodel.XSSFWorkbook.&lt;init&gt;(XSSFWorkbook.java:296)
+	at com.qa.linkedin.util.ExcelUtils.getTestData(ExcelUtils.java:38)
+	at com.qa.linkedin.testcases.LinkedInSearchResultsPageTest.getData(LinkedInSearchResultsPageTest.java:60)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:53)
+	... 25 more
+</pre></div></td>
+<td>0</td>
+<td>com.qa.linkedin.testcases.LinkedInSearchResultsPageTest@314b8f2d</td></tr>
+<tr>
+<td title='com.qa.linkedin.testcases.LinkedInFeedPageTest.doLogoutTest()'><b>doLogoutTest</b><br>Test class: com.qa.linkedin.testcases.LinkedInFeedPageTest</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.cssSelector: img[class*=&apos;global-nav__me-photo ghost-person ember-view&apos;]&apos; (tried for 45 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at com.qa.linkedin.pages.LinkedInFeedPage.doSignOut(LinkedInFeedPage.java:48)
+	at com.qa.linkedin.testcases.LinkedInFeedPageTest.doLogoutTest(LinkedInFeedPageTest.java:52)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;img[class*=&apos;global-nav__me-photo ghost-person ember-view&apos;]&quot;}
+  (Session info: chrome=107.0.5304.88)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.5.2&apos;, revision: &apos;702c64f787c&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.13&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [06c96d38adccc233e3df287c7a7da10e, findElement {using=css selector, value=img[class*=&apos;global-nav__me-photo ghost-person ember-view&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.88, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\kskd7\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55715}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55715/devtoo..., se:cdpVersion: 107.0.5304.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 06c96d38adccc233e3df287c7a7da10e
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy21.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:307)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:40)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:293)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
+	... 30 more
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace631851861", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace631851861'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.cssSelector: img[class*=&apos;global-nav__me-photo ghost-person ember-view&apos;]&apos; (tried for 45 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at com.qa.linkedin.pages.LinkedInFeedPage.doSignOut(LinkedInFeedPage.java:48)
+	at com.qa.linkedin.testcases.LinkedInFeedPageTest.doLogoutTest(LinkedInFeedPageTest.java:52)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:806)
+	at org.testng.TestRunner.run(TestRunner.java:601)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;img[class*=&apos;global-nav__me-photo ghost-person ember-view&apos;]&quot;}
+  (Session info: chrome=107.0.5304.88)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.5.2&apos;, revision: &apos;702c64f787c&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.13&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [06c96d38adccc233e3df287c7a7da10e, findElement {using=css selector, value=img[class*=&apos;global-nav__me-photo ghost-person ember-view&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.88, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\kskd7\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55715}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55715/devtoo..., se:cdpVersion: 107.0.5304.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 06c96d38adccc233e3df287c7a7da10e
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy21.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:307)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:40)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:293)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
+	... 30 more
+</pre></div></td>
+<td>62</td>
+<td>com.qa.linkedin.testcases.LinkedInFeedPageTest@361c294e</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.qa.linkedin.testcases.LinkedInLoginPageTest.verifyLinkedinLoginPageTitleTest()'><b>verifyLinkedinLoginPageTitleTest</b><br>Test class: com.qa.linkedin.testcases.LinkedInLoginPageTest</td>
+<td></td>
+<td>0</td>
+<td>com.qa.linkedin.testcases.LinkedInLoginPageTest@2f7a7219</td></tr>
+<tr>
+<td title='com.qa.linkedin.testcases.LinkedInFeedPageTest.verifyProfileRailCardTest()'><b>verifyProfileRailCardTest</b><br>Test class: com.qa.linkedin.testcases.LinkedInFeedPageTest</td>
+<td></td>
+<td>0</td>
+<td>com.qa.linkedin.testcases.LinkedInFeedPageTest@361c294e</td></tr>
+<tr>
+<td title='com.qa.linkedin.testcases.LinkedInSearchResultsPageTest.doLoginTest()'><b>doLoginTest</b><br>Test class: com.qa.linkedin.testcases.LinkedInSearchResultsPageTest</td>
+<td></td>
+<td>6</td>
+<td>com.qa.linkedin.testcases.LinkedInSearchResultsPageTest@314b8f2d</td></tr>
+<tr>
+<td title='com.qa.linkedin.testcases.LinkedInFeedPageTest.navigateToLoginPageTest()'><b>navigateToLoginPageTest</b><br>Test class: com.qa.linkedin.testcases.LinkedInFeedPageTest<br>Test method: Navigating to login page..</td>
+<td></td>
+<td>1</td>
+<td>com.qa.linkedin.testcases.LinkedInFeedPageTest@361c294e</td></tr>
+<tr>
+<td title='com.qa.linkedin.testcases.LinkedInFeedPageTest.doLoginTest()'><b>doLoginTest</b><br>Test class: com.qa.linkedin.testcases.LinkedInFeedPageTest</td>
+<td></td>
+<td>8</td>
+<td>com.qa.linkedin.testcases.LinkedInFeedPageTest@361c294e</td></tr>
+<tr>
+<td title='com.qa.linkedin.testcases.LinkedInHomePageTest.verifyLinkedinHomePageTitleTest()'><b>verifyLinkedinHomePageTitleTest</b><br>Test class: com.qa.linkedin.testcases.LinkedInHomePageTest</td>
+<td></td>
+<td>0</td>
+<td>com.qa.linkedin.testcases.LinkedInHomePageTest@2f162cc0</td></tr>
+<tr>
+<td title='com.qa.linkedin.testcases.LinkedInFeedPageTest.verifyFeedPageTitleTest()'><b>verifyFeedPageTitleTest</b><br>Test class: com.qa.linkedin.testcases.LinkedInFeedPageTest</td>
+<td></td>
+<td>0</td>
+<td>com.qa.linkedin.testcases.LinkedInFeedPageTest@361c294e</td></tr>
+<tr>
+<td title='com.qa.linkedin.testcases.LinkedInLoginPageTest.navigateToLoginPageTest()'><b>navigateToLoginPageTest</b><br>Test class: com.qa.linkedin.testcases.LinkedInLoginPageTest</td>
+<td></td>
+<td>1</td>
+<td>com.qa.linkedin.testcases.LinkedInLoginPageTest@2f7a7219</td></tr>
+<tr>
+<td title='com.qa.linkedin.testcases.LinkedInSearchResultsPageTest.navigateToLoginPageTest()'><b>navigateToLoginPageTest</b><br>Test class: com.qa.linkedin.testcases.LinkedInSearchResultsPageTest<br>Test method: Navigating to login page..</td>
+<td></td>
+<td>0</td>
+<td>com.qa.linkedin.testcases.LinkedInSearchResultsPageTest@314b8f2d</td></tr>
+<tr>
+<td title='com.qa.linkedin.testcases.LinkedInHomePageTest.verifyLinkedinLogoTest()'><b>verifyLinkedinLogoTest</b><br>Test class: com.qa.linkedin.testcases.LinkedInHomePageTest</td>
+<td></td>
+<td>0</td>
+<td>com.qa.linkedin.testcases.LinkedInHomePageTest@2f162cc0</td></tr>
+<tr>
+<td title='com.qa.linkedin.testcases.LinkedInLoginPageTest.verifyLinkedinSigninHeaderTextTest()'><b>verifyLinkedinSigninHeaderTextTest</b><br>Test class: com.qa.linkedin.testcases.LinkedInLoginPageTest</td>
+<td></td>
+<td>0</td>
+<td>com.qa.linkedin.testcases.LinkedInLoginPageTest@2f7a7219</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.qa.linkedin.testcases.LinkedInSearchResultsPageTest.doLogoutTest()'><b>doLogoutTest</b><br>Test class: com.qa.linkedin.testcases.LinkedInSearchResultsPageTest</td>
+<td><div><pre>java.lang.Throwable: Method com.qa.linkedin.testcases.LinkedInSearchResultsPageTest.doLogoutTest() on instance com.qa.linkedin.testcases.LinkedInSearchResultsPageTest@314b8f2d depends on not successfully finished methods 
+[com.qa.linkedin.testcases.LinkedInSearchResultsPageTest.doPeoplesSearchTest() on instance com.qa.linkedin.testcases.LinkedInSearchResultsPageTest@314b8f2d]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1443000737", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1443000737'><pre>java.lang.Throwable: Method com.qa.linkedin.testcases.LinkedInSearchResultsPageTest.doLogoutTest() on instance com.qa.linkedin.testcases.LinkedInSearchResultsPageTest@314b8f2d depends on not successfully finished methods 
+[com.qa.linkedin.testcases.LinkedInSearchResultsPageTest.doPeoplesSearchTest() on instance com.qa.linkedin.testcases.LinkedInSearchResultsPageTest@314b8f2d]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:150)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:806)
+	at org.testng.TestRunner.run(TestRunner.java:601)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.qa.linkedin.testcases.LinkedInSearchResultsPageTest@314b8f2d</td></tr>
+</table><p>
+</body>
+</html>
